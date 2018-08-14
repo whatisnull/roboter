@@ -1,0 +1,17 @@
+---
+-
+  element_info: //android.widget.RelativeLayout
+  find_type: by_xpaths
+  operate_type: click
+  index: 9
+
+-
+  element_info: //android.widget.TextView[contains(@text, '下载 (')]
+  find_type: by_xpath
+  operate_type: check
+
+-
+  element_info: com.tencent.android.qqdownloader:id/r5
+  find_type: by_id
+  operate_type: click
+  sleeps: 120

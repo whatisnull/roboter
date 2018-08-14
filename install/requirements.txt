@@ -1,0 +1,6 @@
+multiprocess
+pyYaml
+selenium
+Appium-Python-Client
+requests
+xmltodict

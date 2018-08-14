@@ -1,0 +1,49 @@
+---
+
+
+-
+  element_info: com.huawei.systemmanager:id/btn_allow
+  find_type: by_id
+  operate_type: click
+  sleeps: 2
+
+-
+  element_info: //android.widget.TextView[@text="去授权"]
+  find_type: by_xpath
+  operate_type: click
+
+-
+  element_info: com.android.packageinstaller:id/permission_allow_button
+  find_type: by_id
+  operate_type: click
+  sleeps: 2
+
+-
+  element_info: com.android.packageinstaller:id/permission_allow_button
+  find_type: by_id
+  operate_type: click
+  sleeps: 2
+
+-
+  element_info: com.android.packageinstaller:id/permission_allow_button
+  find_type: by_id
+  operate_type: click
+  sleeps: 2
+
+-
+  element_info: //android.widget.TextView[@text="跳过"]
+  find_type: by_xpath
+  operate_type: click
+  sleeps: 2
+
+-
+  element_info: //android.widget.TextView[@text="跳过"]
+  find_type: by_xpath
+  operate_type: click
+  sleeps: 2
+
+-
+  element_info: com.tencent.android.qqdownloader:id/b3f
+  find_type: by_id
+  operate_type: click
+  sleeps: 2

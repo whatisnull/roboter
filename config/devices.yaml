@@ -1,0 +1,60 @@
+﻿appium:
+
+ - devices: 127.0.0.1:54001
+   port: 4726
+   server: appium  -p 4726 -bp 4736 -U 127.0.0.1:54001 --log-level info
+   platformName: android
+   apk_path: data/apk/yingyongbao_7212130.apk
+   yamls_path: jobs/yaml/yingyongbao
+#   closed: true
+
+ - devices: 127.0.0.1:54011
+   port: 4727
+   server: appium  -p 4727 -bp 4737 -U 127.0.0.1:54011 --log-level info
+   platformName: android
+   apk_path: data/apk/yingyongbao_7212130.apk
+   yamls_path: jobs/yaml/yingyongbao
+   closed: true
+
+ - devices: 127.0.0.1:54021
+   port: 4728
+   server: appium  -p 4728 -bp 4738 -U 127.0.0.1:54021 --log-level info
+   platformName: android
+   apk_path: data/apk/yingyongbao_7212130.apk
+   yamls_path: jobs/yaml/yingyongbao
+   closed: true
+
+ - devices: 127.0.0.1:54031
+   port: 4729
+   server: appium  -p 4729 -bp 4739 -U 127.0.0.1:54031 --log-level info
+   platformName: android
+   apk_path: data/apk/yingyongbao_7212130.apk
+   yamls_path: jobs/yaml/yingyongbao
+   closed: true
+
+ - devices: 127.0.0.1:54041
+   port: 4741
+   server: appium  -p 4741 -bp 4751 -U 127.0.0.1:54041 --log-level info
+   platformName: android
+   apk_path: data/apk/yingyongbao_7212130.apk
+   yamls_path: jobs/yaml/yingyongbao
+   closed: true
+
+ - devices: B2T7N16A24005423
+   port: 4724
+   server: appium  -p 4724 -bp 4734 -U B2T7N16A24005423 --log-level info
+   platformName: android
+   apk_path: data/apk/yingyongbao_7212130.apk
+   yamls_path: jobs/yaml/yingyongbao
+   closed: true
+
+
+ - devices: PBV0216830001005
+   port: 4725
+   server: appium  -p 4725 -bp 4735 -U PBV0216830001005 --log-level info
+   platformName: android
+   apk_path: data/apk/yingyongbao_7212130.apk
+   yamls_path: jobs/yaml/yingyongbao
+   closed: true
+
+

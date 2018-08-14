@@ -1,0 +1,17 @@
+
+
+
+
+# set JAVA env
+JAVA_HOME=/usr/java/jdk1.8.0_171-amd64/
+
+CLASSPATH=.:$JAVA_HOME/lib/tools.jar
+
+ANDROID_HOME=/opt/android-tools
+
+NONEJS_HOME=/opt/node
+
+PATH=$JAVA_HOME/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/apktool:$ANDROID_HOME/sdk-tools/tools/bin:$ANDROID_HOME/sdk-tools/tools:$ANDROID_HOME/tools/bin:$NONEJS_HOME/bin:$PATH
+
+export JAVA_HOME CLASSPATH ANDROID_HOME NONEJS_HOME PATH
+

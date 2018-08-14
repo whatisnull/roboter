@@ -1,0 +1,4 @@
+﻿site: yingyongbao
+job_path: jobs
+jobs: [init.yaml, update.yaml,  search.yaml, download.yaml, install.yaml]
+
