@@ -7,6 +7,8 @@
 
 主要介绍：
 
+环境安装：
+
 centos 7 + python2.7 安装
 
 环境安装
@@ -55,4 +57,81 @@ centos 7 + python2.7 安装
   直接下载集成环境
        链接: https://pan.baidu.com/s/1IST0r8MJqeTA-JkvhWFjYw 密码: qc2y
        下载并上传致服务器 /tmp目录下，运行 sh install.sh 即可
-       
+   
+  二次开发：
+    该模块可直接获取设备、测试package等信息，不用指定
+    1. 只需要在 config/devices.yaml 设置设备与服务端口、代测试包等信息
+    
+        yamls_path 表示任务或用例存放的路径，可随意指定
+        
+        
+        appium:
+
+         - devices: 127.0.0.1:54001
+           port: 4726
+           server: appium  -p 4726 -bp 4736 -U 127.0.0.1:54001 --log-level info
+           platformName: android
+           apk_path: data/apk/yingyongbao_7212130.apk
+           yamls_path: jobs/yaml/yingyongbao
+        #   closed: true
+
+         - devices: 127.0.0.1:54011
+           port: 4727
+           server: appium  -p 4727 -bp 4737 -U 127.0.0.1:54011 --log-level info
+           platformName: android
+           apk_path: data/apk/yingyongbao_7212130.apk
+           yamls_path: jobs/yaml/yingyongbao
+           closed: true
+
+         - devices: 127.0.0.1:54021
+           port: 4728
+           server: appium  -p 4728 -bp 4738 -U 127.0.0.1:54021 --log-level info
+           platformName: android
+           apk_path: data/apk/yingyongbao_7212130.apk
+           yamls_path: jobs/yaml/yingyongbao
+           closed: true
+     
+    2. 添加用例
+        在 jobs 目录下添加对应的
+        cat jobs/yaml/yingyongbao/jobs.yaml 
+        site: yingyongbao
+        job_path: jobs
+        jobs: [init.yaml, update.yaml,  search.yaml, download.yaml, install.yaml]
+        
+        #jobs表示要执行的任务或用例
+        
+        具体用例或任务内容
+        
+        具体的操作选项同selenium by_id,by_ids, by_name,by_class, by_xpath.....
+        
+        如下：
+        
+        cat jobs/yaml/yingyongbao/jobs/init.yaml 
+        ---
+
+
+        -
+          element_info: com.huawei.systemmanager:id/btn_allow
+          find_type: by_id
+          operate_type: click
+          sleeps: 2
+
+        -
+          element_info: //android.widget.TextView[@text="去授权"]
+          find_type: by_xpath
+          operate_type: click
+
+        -
+          element_info: com.android.packageinstaller:id/permission_allow_button
+          find_type: by_id
+          operate_type: click
+          sleeps: 2
+
+        -
+          element_info: com.android.packageinstaller:id/permission_allow_button
+          find_type: by_id
+          operate_type: click
+          sleeps: 2
+
+        
+        
