@@ -1,0 +1,4 @@
+﻿site: yunzijia
+job_path: jobs
+jobs: [login.yaml]
+

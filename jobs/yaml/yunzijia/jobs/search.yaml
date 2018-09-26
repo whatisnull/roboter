@@ -1,0 +1,28 @@
+---
+
+-
+  element_info: com.tencent.android.qqdownloader:id/a3l
+  find_type: by_id
+  operate_type: click
+
+-
+  element_info: //android.widget.TextView[@text="软件"]
+  find_type: by_xpath
+  operate_type: click
+
+-
+  element_info: com.tencent.android.qqdownloader:id/awt
+  find_type: by_id
+  operate_type: click
+
+-
+  element_info: com.tencent.android.qqdownloader:id/yv
+  find_type: by_id
+  operate_type: send_keys
+  text: 大众点评
+
+-
+  element_info: //android.widget.TextView[@text="搜索"]
+  find_type: by_xpath
+  operate_type: click
+  sleeps: 5

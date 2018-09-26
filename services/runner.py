@@ -82,6 +82,8 @@ def process_run():
 
 def run():
     log.info("devices: %s", devices)
+    if not devices:
+        return
     flag = servers_run()
     if flag:
         process_run()

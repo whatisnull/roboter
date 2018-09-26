@@ -1,0 +1,7 @@
+---
+
+-
+  element_info: //android.widget.Button[@text="取消"]
+  find_type: by_xpath
+  operate_type: click
+  sleeps: 5

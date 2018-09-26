@@ -6,7 +6,7 @@
    platformName: android
    apk_path: data/apk/yingyongbao_7212130.apk
    yamls_path: jobs/yaml/yingyongbao
-#   closed: true
+   closed: true
 
  - devices: 127.0.0.1:54011
    port: 4727
@@ -49,12 +49,13 @@
    closed: true
 
 
- - devices: PBV0216830001005
+ - devices: M95QACPB7Y3PH
    port: 4725
-   server: appium  -p 4725 -bp 4735 -U PBV0216830001005 --log-level info
+   server: appium  -p 4725 -bp 4735 -U M95QACPB7Y3PH --log-level info
    platformName: android
-   apk_path: data/apk/yingyongbao_7212130.apk
-   yamls_path: jobs/yaml/yingyongbao
-   closed: true
+   apk_path: data/apk/com.kdweibo.client_10.0.9_444.apk
+   yamls_path: jobs/yaml/yunzijia
+   #closed: true
+   reset: true
 
 

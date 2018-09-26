@@ -1,0 +1,7 @@
+---
+
+-
+  element_info: //android.widget.TextView[@text="一键签到"]
+  find_type: by_xpath
+  operate_type: click
+
